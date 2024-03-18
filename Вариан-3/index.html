@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="title">Расчет стоимости продуктов в супермаркете</h1>
+         <div class="form">
+            <label for="milk">Цена "молоко":</label>
+            <input type="text" id="milk">
+            <label for="lMilk">Кол-во:</label>
+            <input type="text" id="lMilk">
+            <br>
+            <br>
+            <label for="egg">Цена "яйца":</label>
+            <input type="text" id="egg">
+            <label for="lEgg">Кол-во:</label>
+            <input type="text" id="lEgg">
+            <br>
+            <br>
+            <label for="vegetables">Цена "овощи":</label>
+            <input type="text" id="vegetables">
+            <label for="lVegetables">Кол-во:</label>
+            <input type="text" id="lVegetables">
+            <br>
+            <br>
+            <label for="fruits">Цена "фрукты":</label>
+            <input type="text" id="fruits">
+            <label for="lFruits">Кол-во:</label>
+            <input type="text" id="lFruits">
+            <br>
+            <br>
+            <button onClick="calculate()" id="btnSave">Рассчитать</button>
+         </div>
+        <div id="result"></div>
+</body>
+</html>
