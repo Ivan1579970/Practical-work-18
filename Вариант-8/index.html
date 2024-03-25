@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script defer src="js.js"></script>
+        </head>
+        <body>
+            <h1>Контракт</h1>
+            <form id="contractForm">
+                <label for="contractName">Номер контракта:</label>
+                <input type="text" id="contractName" required>
+                <label for="contractDeadline">Дата заключения:</label>
+                <input type="date" id="contractDeadline" required>
+                <label for="contractDescription">Описание:</label>
+                <textarea id="contractDescription" required></textarea>
+                <label for="contractStatus">Статус:</label>
+                <select id="contractStatus" required>
+                    <option value="">Выберите статус</option>
+                    <option value="Активен">Активен</option>
+                    <option value="Завершен">Завершен</option>
+                    <option value="Отменён">Отменён</option>
+                </select>
+                <label for="contractImage">Изображение:</label>
+                <input type="file" id="contractImage" required accept="image/*">
+                <button type="submit">Добавить контракт</button>
+            </form>
+            <div class="contract-cards"></div>
+        </body>
+    </html>
